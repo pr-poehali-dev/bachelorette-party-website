@@ -109,6 +109,19 @@ export default function Index() {
                 — Ольга, 30 лет
               </p>
             </div>
+
+            <div className="mt-12 text-center">
+              <Button 
+                size="lg" 
+                onClick={scrollToBooking}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-12 py-6 text-lg"
+              >
+                Присоединиться к женскому кругу ЭРОС
+              </Button>
+              <p className="text-sm text-muted-foreground mt-4">
+                Осталось 4 места на ближайшую встречу
+              </p>
+            </div>
           </div>
         </div>
       </section>
