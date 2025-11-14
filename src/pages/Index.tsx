@@ -66,15 +66,15 @@ export default function Index() {
       </section>
 
       {/* What Women Need Section */}
-      <section id="needs" className="py-20 px-4 md:px-8 bg-gradient-to-b from-secondary/10 via-white to-muted/20 animate-fade-in">
+      <section id="needs" className="py-20 px-4 md:px-8 bg-gradient-to-b from-secondary/10 via-white to-muted/20">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center text-primary">
+          <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center text-primary animate-fade-in">
             В ЧЁМ НА САМОМ ДЕЛЕ НУЖДАЕТСЯ ЖЕНЩИНА
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-white to-secondary/5 rounded-3xl p-8 md:p-10 shadow-xl hover-lift border border-secondary/20">
-              <div className="bg-gradient-to-br from-primary to-primary/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg">
+            <div className="bg-gradient-to-br from-white to-secondary/5 rounded-3xl p-8 md:p-10 shadow-xl hover-lift border border-secondary/20 animate-slide-left stagger-1">
+              <div className="bg-gradient-to-br from-primary to-primary/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg animate-scale-in stagger-2">
                 <Icon name="Heart" size={32} className="text-primary-foreground" />
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center">
@@ -89,8 +89,8 @@ export default function Index() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-white to-accent/5 rounded-3xl p-8 md:p-10 shadow-xl hover-lift border border-accent/20">
-              <div className="bg-gradient-to-br from-accent to-accent/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg">
+            <div className="bg-gradient-to-br from-white to-accent/5 rounded-3xl p-8 md:p-10 shadow-xl hover-lift border border-accent/20 animate-slide-right stagger-2">
+              <div className="bg-gradient-to-br from-accent to-accent/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg animate-scale-in stagger-3">
                 <Icon name="Flower2" size={32} className="text-accent-foreground" />
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center">
@@ -105,7 +105,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-secondary/30 to-secondary/10 rounded-3xl p-8 md:p-12 shadow-2xl border-2 border-secondary/40 mb-12 hover-lift">
+          <div className="bg-gradient-to-br from-secondary/30 to-secondary/10 rounded-3xl p-8 md:p-12 shadow-2xl border-2 border-secondary/40 mb-12 hover-lift animate-scale-in stagger-3">
             <div className="flex items-start gap-4 mb-6">
               <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                 <Icon name="MessageSquareQuote" size={24} className="text-primary" />
@@ -127,7 +127,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="text-center">
+          <div className="text-center animate-slide-up stagger-3">
             <Button 
               size="lg" 
               onClick={scrollToBooking}
