@@ -257,6 +257,60 @@ export default function Index() {
             </Card>
           </div>
 
+          {/* Dates Section */}
+          <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl p-8 mb-12 border-2 border-primary/20">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <Icon name="Calendar" size={32} className="text-primary" />
+              <h3 className="text-2xl md:text-3xl font-bold text-primary">Даты встреч</h3>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+              <div className="bg-white/50 backdrop-blur-sm rounded-xl p-5 hover-lift hover-scale border-2 border-transparent hover:border-primary/30 transition-all group">
+                <div className="flex items-center gap-4">
+                  <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-full w-14 h-14 flex items-center justify-center group-hover:rotate-12 transition-transform">
+                    <span className="text-2xl">📅</span>
+                  </div>
+                  <div className="text-left">
+                    <p className="text-xl font-bold text-primary">28 октября</p>
+                    <p className="text-muted-foreground">18:00</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white/50 backdrop-blur-sm rounded-xl p-5 hover-lift hover-scale border-2 border-transparent hover:border-accent/30 transition-all group">
+                <div className="flex items-center gap-4">
+                  <div className="bg-gradient-to-br from-accent/20 to-primary/20 rounded-full w-14 h-14 flex items-center justify-center group-hover:rotate-12 transition-transform">
+                    <span className="text-2xl">📅</span>
+                  </div>
+                  <div className="text-left">
+                    <p className="text-xl font-bold text-primary">5 декабря</p>
+                    <p className="text-muted-foreground">18:00</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white/50 backdrop-blur-sm rounded-xl p-5 hover-lift hover-scale border-2 border-transparent hover:border-primary/30 transition-all group">
+                <div className="flex items-center gap-4">
+                  <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-full w-14 h-14 flex items-center justify-center group-hover:rotate-12 transition-transform">
+                    <span className="text-2xl">📅</span>
+                  </div>
+                  <div className="text-left">
+                    <p className="text-xl font-bold text-primary">12 декабря</p>
+                    <p className="text-muted-foreground">18:00</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white/50 backdrop-blur-sm rounded-xl p-5 hover-lift hover-scale border-2 border-transparent hover:border-accent/30 transition-all group">
+                <div className="flex items-center gap-4">
+                  <div className="bg-gradient-to-br from-accent/20 to-primary/20 rounded-full w-14 h-14 flex items-center justify-center group-hover:rotate-12 transition-transform">
+                    <span className="text-2xl">📅</span>
+                  </div>
+                  <div className="text-left">
+                    <p className="text-xl font-bold text-primary">19 декабря</p>
+                    <p className="text-muted-foreground">18:00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-accent/20 via-primary/10 to-accent/20 border-2 border-accent rounded-2xl p-8 text-center hover-lift pulse-glow relative overflow-hidden">
             <div className="absolute inset-0 shimmer"></div>
             <div className="relative">
