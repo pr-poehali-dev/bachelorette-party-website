@@ -65,67 +65,24 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Pain Section */}
-      <section id="pain" className="py-16 px-4 md:px-8 bg-muted/30 animate-fade-in">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-6">
-            Почему об этом молчат?
+      {/* What Women Need Section */}
+      <section id="needs" className="py-16 px-4 md:px-8 bg-muted/30 animate-fade-in">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-bold mb-8">
+            В ЧЁМ НА САМОМ ДЕЛЕ НУЖДАЕТСЯ ЖЕНЩИНА
           </h2>
-          <p className="text-xl text-center text-muted-foreground mb-12">
-            Интимность окружена стыдом, запретами и неловкими советами из интернета
-          </p>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <Card className="hover-lift">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <Icon name="Coffee" size={32} className="text-primary flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-xl mb-3">Стыд и табу</h3>
-                    <p className="text-muted-foreground">
-                      Нас учили, что об этом не говорят. В итоге — неловкость, незнание своего тела и потерянное удовольствие
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="hover-lift">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <Icon name="Users" size={32} className="text-primary flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-xl mb-3">Нет доверенного источника</h3>
-                    <p className="text-muted-foreground">
-                      Информация из соцсетей противоречива, а спросить не у кого. Хочется честного разговора без осуждения
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <Card className="bg-secondary border-none">
-            <CardContent className="pt-8 pb-8">
-              <div className="flex items-start gap-6">
-                <Icon name="Quote" size={48} className="text-primary flex-shrink-0 opacity-50" />
-                <div>
-                  <p className="text-lg italic mb-4">
-                    "Всю жизнь думала, что со мной что-то не так. Оказалось — просто никто не объяснял, как устроено моё тело и что мне нужно. Это изменило всё"
-                  </p>
-                  <p className="font-semibold text-primary">Марина, 35 лет</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <div className="mt-12 text-center">
-            <div className="inline-block bg-primary/10 rounded-2xl p-8">
-              <p className="text-5xl font-bold text-primary mb-2">84%</p>
-              <p className="text-muted-foreground max-w-md">
-                женщин хотя бы раз чувствовали дискомфорт при разговоре об интимности — даже с близкими людьми
-              </p>
-            </div>
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg">
+            <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+              Честность и понятность
+            </h3>
+            
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Женщине важно пространство, где можно говорить открыто —
+              без неловкости, давления и сложных терминов.
+              Где объясняют простым языком: про телесный отклик, чувственный уход
+              и современные аксессуары для удовольствия.
+            </p>
           </div>
         </div>
       </section>
