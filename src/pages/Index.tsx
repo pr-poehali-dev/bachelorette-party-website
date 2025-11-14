@@ -338,7 +338,7 @@ export default function Index() {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="hover-lift">
+            <Card className="hover-lift hover-scale">
               <CardContent className="pt-6">
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -349,9 +349,11 @@ export default function Index() {
                   "Пришла с волнением, а ушла с поддержкой и вдохновением"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center font-bold text-primary">
-                    М
-                  </div>
+                  <img 
+                    src="https://cdn.poehali.dev/projects/5c77938f-76ab-4d06-a204-320d9ed46d8b/files/fa5c954f-725b-41ec-b542-133620369773.jpg"
+                    alt="Мария"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
                   <div>
                     <p className="font-semibold">Мария</p>
                     <p className="text-sm text-muted-foreground">29 лет</p>
@@ -360,7 +362,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="hover-lift">
+            <Card className="hover-lift hover-scale">
               <CardContent className="pt-6">
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -371,9 +373,11 @@ export default function Index() {
                   "Получила ответы, которые не могла задать годами"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center font-bold text-primary">
-                    С
-                  </div>
+                  <img 
+                    src="https://cdn.poehali.dev/projects/5c77938f-76ab-4d06-a204-320d9ed46d8b/files/78e16b3a-7760-45ef-81bb-b6984e366830.jpg"
+                    alt="Светлана"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
                   <div>
                     <p className="font-semibold">Светлана</p>
                     <p className="text-sm text-muted-foreground">42 года</p>
@@ -382,7 +386,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="hover-lift">
+            <Card className="hover-lift hover-scale">
               <CardContent className="pt-6">
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -393,12 +397,86 @@ export default function Index() {
                   "С подругой вышли обновлённые и довольные"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center font-bold text-primary">
-                    А
-                  </div>
+                  <img 
+                    src="https://cdn.poehali.dev/projects/5c77938f-76ab-4d06-a204-320d9ed46d8b/files/c57dea1d-ea93-48a8-8955-d8ccdead607a.jpg"
+                    alt="Анастасия"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
                   <div>
                     <p className="font-semibold">Анастасия</p>
                     <p className="text-sm text-muted-foreground">31 год</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-lift hover-scale">
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-accent fill-accent" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Впервые в жизни почувствовала себя услышанной и понятой"
+                </p>
+                <div className="flex items-center gap-3">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/5c77938f-76ab-4d06-a204-320d9ed46d8b/files/21e2db08-9e13-4970-be8f-2ef0342b2895.jpg"
+                    alt="Екатерина"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="font-semibold">Екатерина</p>
+                    <p className="text-sm text-muted-foreground">35 лет</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-lift hover-scale">
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-accent fill-accent" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Легко, без давления. Узнала столько нового о себе за один вечер!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/5c77938f-76ab-4d06-a204-320d9ed46d8b/files/379be7cc-d934-4c71-94b1-df9c3d2696c0.jpg"
+                    alt="Юлия"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="font-semibold">Юлия</p>
+                    <p className="text-sm text-muted-foreground">27 лет</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover-lift hover-scale">
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={20} className="text-accent fill-accent" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "После круга начала относиться к себе с заботой и любовью"
+                </p>
+                <div className="flex items-center gap-3">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/5c77938f-76ab-4d06-a204-320d9ed46d8b/files/6a39a46d-8180-4077-b245-eeab3612a870.jpg"
+                    alt="Ирина"
+                    className="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="font-semibold">Ирина</p>
+                    <p className="text-sm text-muted-foreground">38 лет</p>
                   </div>
                 </div>
               </CardContent>
