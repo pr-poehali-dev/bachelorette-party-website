@@ -51,7 +51,7 @@ export default function Index() {
                 onClick={scrollToBooking}
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 text-lg"
               >
-                Забронировать девичник сейчас
+                Присоединиться к кругу
               </Button>
             </div>
             <div className="relative">
@@ -69,10 +69,10 @@ export default function Index() {
       <section id="pain" className="py-16 px-4 md:px-8 bg-muted/30 animate-fade-in">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-6">
-            Почему обычные девичники разочаровывают
+            Почему об этом молчат?
           </h2>
           <p className="text-xl text-center text-muted-foreground mb-12">
-            Снова кафе, снова те же разговоры… Хочется чего-то большего?
+            Интимность окружена стыдом, запретами и неловкими советами из интернета
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -81,9 +81,9 @@ export default function Index() {
                 <div className="flex items-start gap-4">
                   <Icon name="Coffee" size={32} className="text-primary flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-xl mb-3">Одно и то же</h3>
+                    <h3 className="font-semibold text-xl mb-3">Стыд и табу</h3>
                     <p className="text-muted-foreground">
-                      Стандартные девичники превращаются в рутину: одно и то же кафе, поверхностные беседы, предсказуемый сценарий
+                      Нас учили, что об этом не говорят. В итоге — неловкость, незнание своего тела и потерянное удовольствие
                     </p>
                   </div>
                 </div>
@@ -95,9 +95,9 @@ export default function Index() {
                 <div className="flex items-start gap-4">
                   <Icon name="Users" size={32} className="text-primary flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-xl mb-3">Нет откровенности</h3>
+                    <h3 className="font-semibold text-xl mb-3">Нет доверенного источника</h3>
                     <p className="text-muted-foreground">
-                      Хочется сблизиться с подругами, обсудить то, о чём обычно молчат, но атмосфера не располагает
+                      Информация из соцсетей противоречива, а спросить не у кого. Хочется честного разговора без осуждения
                     </p>
                   </div>
                 </div>
@@ -111,9 +111,9 @@ export default function Index() {
                 <Icon name="Quote" size={48} className="text-primary flex-shrink-0 opacity-50" />
                 <div>
                   <p className="text-lg italic mb-4">
-                    "Мы каждый месяц собирались в одном и том же месте. В какой-то момент поняла — нам нечего обсуждать. Хотелось чего-то свежего, смелого, но не пошлого"
+                    "Всю жизнь думала, что со мной что-то не так. Оказалось — просто никто не объяснял, как устроено моё тело и что мне нужно. Это изменило всё"
                   </p>
-                  <p className="font-semibold text-primary">Анна, 32 года</p>
+                  <p className="font-semibold text-primary">Марина, 35 лет</p>
                 </div>
               </div>
             </CardContent>
@@ -121,9 +121,9 @@ export default function Index() {
 
           <div className="mt-12 text-center">
             <div className="inline-block bg-primary/10 rounded-2xl p-8">
-              <p className="text-5xl font-bold text-primary mb-2">78%</p>
+              <p className="text-5xl font-bold text-primary mb-2">84%</p>
               <p className="text-muted-foreground max-w-md">
-                женщин признаются, что стесняются покупать интимные товары в одиночку, но в компании подруг чувствуют себя свободнее
+                женщин хотя бы раз чувствовали дискомфорт при разговоре об интимности — даже с близкими людьми
               </p>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function Index() {
       <section id="solution" className="py-16 px-4 md:px-8 animate-fade-in">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
-            Ваш вечер трансформации: что вас ждёт
+            Что происходит в женском круге ЭРОС
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -143,9 +143,9 @@ export default function Index() {
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                   <Icon name="Lock" size={28} className="text-primary" />
                 </div>
-                <h3 className="font-bold text-xl mb-3">Приватная атмосфера</h3>
+                <h3 className="font-bold text-xl mb-3">Безопасное пространство</h3>
                 <p className="text-muted-foreground">
-                  Магазин закрыт только для вашей группы (5-10 человек). Никаких посторонних, полная конфиденциальность
+                  Только женщины, только доверие. Закрытая группа 5-10 человек, где можно говорить обо всём без страха осуждения
                 </p>
               </CardContent>
             </Card>
@@ -155,9 +155,9 @@ export default function Index() {
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                   <Icon name="Gamepad2" size={28} className="text-primary" />
                 </div>
-                <h3 className="font-bold text-xl mb-3">Игровой формат</h3>
+                <h3 className="font-bold text-xl mb-3">Живой разговор</h3>
                 <p className="text-muted-foreground">
-                  Настольная игра с 5 категориями. Выполняйте задания, получайте фишки, выигрывайте призы
+                  Через игру и практики узнаёте о своём теле, желаниях и границах. Без лекций — через опыт и диалог
                 </p>
               </CardContent>
             </Card>
@@ -167,9 +167,9 @@ export default function Index() {
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                   <Icon name="UserCheck" size={28} className="text-primary" />
                 </div>
-                <h3 className="font-bold text-xl mb-3">Экспертное сопровождение</h3>
+                <h3 className="font-bold text-xl mb-3">Эксперты без пафоса</h3>
                 <p className="text-muted-foreground">
-                  Специалисты секс-шопа рассказывают о топовых новинках, делятся секретами выбора
+                  Ведущие круга — специалисты по телесным практикам и интимному здоровью. Говорят просто, по-человечески
                 </p>
               </CardContent>
             </Card>
@@ -179,9 +179,9 @@ export default function Index() {
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                   <Icon name="Wine" size={28} className="text-primary" />
                 </div>
-                <h3 className="font-bold text-xl mb-3">Фуршет и напитки</h3>
+                <h3 className="font-bold text-xl mb-3">Атмосфера заботы</h3>
                 <p className="text-muted-foreground">
-                  Игристое, чай, лёгкие закуски создают расслабленную атмосферу
+                  Чай, лёгкий фуршет, мягкий свет. Пространство, где можно расслабиться и быть собой
                 </p>
               </CardContent>
             </Card>
@@ -191,9 +191,9 @@ export default function Index() {
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                   <Icon name="Gift" size={28} className="text-primary" />
                 </div>
-                <h3 className="font-bold text-xl mb-3">Подарки и призы</h3>
+                <h3 className="font-bold text-xl mb-3">Подарки для себя</h3>
                 <p className="text-muted-foreground">
-                  Каждая участница получает пакет с пробниками, купонами на скидку 10% и сюрпризами
+                  Каждая получает набор для домашнего ухода, гайды по практикам и доступ к закрытому чату поддержки
                 </p>
               </CardContent>
             </Card>
@@ -203,23 +203,23 @@ export default function Index() {
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-4">
                   <Icon name="Percent" size={28} className="text-primary" />
                 </div>
-                <h3 className="font-bold text-xl mb-3">Скидка 10%</h3>
+                <h3 className="font-bold text-xl mb-3">Скидка 15%</h3>
                 <p className="text-muted-foreground">
-                  На все покупки в день мероприятия
+                  На все инструменты для практик в день встречи и неделю после
                 </p>
               </CardContent>
             </Card>
           </div>
 
           <div className="bg-accent/10 border-2 border-accent rounded-2xl p-8 text-center">
-            <p className="text-2xl font-bold mb-4">Стоимость: 800₽ с человека</p>
-            <p className="text-muted-foreground mb-6">Включает участие в игре, фуршет, подарочный набор и скидку 10%</p>
+            <p className="text-2xl font-bold mb-4">Вклад: 1200₽ с человека</p>
+            <p className="text-muted-foreground mb-6">Участие в круге, набор для практик, чай, доступ к чату поддержки и скидка 15%</p>
             <Button 
               size="lg" 
               onClick={scrollToBooking}
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8"
             >
-              Забронировать — осталось 3 места
+              Записаться — осталось 4 места
             </Button>
           </div>
         </div>
@@ -229,7 +229,7 @@ export default function Index() {
       <section id="testimonials" className="py-16 px-4 md:px-8 bg-muted/30 animate-fade-in">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
-            Что говорят участницы
+            Голоса из круга
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -241,17 +241,17 @@ export default function Index() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "Пришла с опаской, ушла с сумкой покупок и морем впечатлений. Атмосфера невероятная — чувствовала себя как на встрече с давними подругами"
+                  "Впервые почувствовала, что можно говорить об этом вслух. Без стыда, без странных взглядов. Ушла с ощущением, что наконец-то знаю, чего хочу"
                 </p>
                 <div className="flex items-center gap-3">
                   <img 
                     src="https://cdn.poehali.dev/projects/5c77938f-76ab-4d06-a204-320d9ed46d8b/files/4ef30699-b07e-49e5-a128-53c9239fe1fc.jpg"
-                    alt="Мария"
+                    alt="Елена"
                     className="w-12 h-12 rounded-full object-cover"
                   />
                   <div>
-                    <p className="font-semibold">Мария</p>
-                    <p className="text-sm text-muted-foreground">29 лет</p>
+                    <p className="font-semibold">Елена</p>
+                    <p className="text-sm text-muted-foreground">28 лет</p>
                   </div>
                 </div>
               </CardContent>
@@ -265,15 +265,15 @@ export default function Index() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "Думала, это для молодых. Оказалось — для всех, кто хочет быть счастливой. Узнала столько нового, что даже стыдно — сколько лет я упускала!"
+                  "Думала, уже всё знаю. Но оказалось — столько лет игнорировала своё тело и желания. Круг вернул мне контакт с собой"
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center font-bold text-primary">
-                    С
+                    О
                   </div>
                   <div>
-                    <p className="font-semibold">Светлана</p>
-                    <p className="text-sm text-muted-foreground">42 года</p>
+                    <p className="font-semibold">Ольга</p>
+                    <p className="text-sm text-muted-foreground">38 лет</p>
                   </div>
                 </div>
               </CardContent>
@@ -287,15 +287,15 @@ export default function Index() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "Привела подруг на день рождения. Лучший подарок себе! Теперь это наша традиция"
+                  "После круга поняла: я имею право на удовольствие. Это звучит просто, но для меня стало открытием"
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center font-bold text-primary">
-                    А
+                    Д
                   </div>
                   <div>
-                    <p className="font-semibold">Анастасия</p>
-                    <p className="text-sm text-muted-foreground">31 год</p>
+                    <p className="font-semibold">Дарья</p>
+                    <p className="text-sm text-muted-foreground">32 года</p>
                   </div>
                 </div>
               </CardContent>
@@ -304,12 +304,12 @@ export default function Index() {
 
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <p className="text-4xl font-bold text-primary mb-2">127</p>
-              <p className="text-muted-foreground">Проведено мероприятий</p>
+              <p className="text-4xl font-bold text-primary mb-2">43</p>
+              <p className="text-muted-foreground">Встречи женского круга</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-primary mb-2">892</p>
-              <p className="text-muted-foreground">Счастливых участниц</p>
+              <p className="text-4xl font-bold text-primary mb-2">340+</p>
+              <p className="text-muted-foreground">Женщин прошли круг</p>
             </div>
             <div>
               <p className="text-4xl font-bold text-primary mb-2">4.9</p>
@@ -323,16 +323,16 @@ export default function Index() {
       <section id="guarantees" className="py-16 px-4 md:px-8 animate-fade-in">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
-            Ваш комфорт — наш приоритет
+            Ценности круга ЭРОС
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="border-2 border-primary/20 hover-lift">
               <CardContent className="pt-6 text-center">
                 <Icon name="Lock" size={40} className="text-primary mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Конфиденциальность</h3>
+                <h3 className="font-bold mb-2">Полная приватность</h3>
                 <p className="text-sm text-muted-foreground">
-                  Никаких фото без вашего разрешения
+                  Что происходит в круге — остаётся в круге
                 </p>
               </CardContent>
             </Card>
@@ -340,9 +340,9 @@ export default function Index() {
             <Card className="border-2 border-primary/20 hover-lift">
               <CardContent className="pt-6 text-center">
                 <Icon name="BadgeCheck" size={40} className="text-primary mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Возврат средств</h3>
+                <h3 className="font-bold mb-2">Без осуждения</h3>
                 <p className="text-sm text-muted-foreground">
-                  100% возврат при отмене мероприятия
+                  Любой вопрос — нормальный вопрос
                 </p>
               </CardContent>
             </Card>
@@ -350,9 +350,9 @@ export default function Index() {
             <Card className="border-2 border-primary/20 hover-lift">
               <CardContent className="pt-6 text-center">
                 <Icon name="Handshake" size={40} className="text-primary mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Без навязчивых продаж</h3>
+                <h3 className="font-bold mb-2">Никаких продаж</h3>
                 <p className="text-sm text-muted-foreground">
-                  Только информация и рекомендации
+                  Только знания и практический опыт
                 </p>
               </CardContent>
             </Card>
@@ -360,9 +360,9 @@ export default function Index() {
             <Card className="border-2 border-primary/20 hover-lift">
               <CardContent className="pt-6 text-center">
                 <Icon name="Heart" size={40} className="text-primary mx-auto mb-4" />
-                <h3 className="font-bold mb-2">Безопасная среда</h3>
+                <h3 className="font-bold mb-2">Бережное отношение</h3>
                 <p className="text-sm text-muted-foreground">
-                  Только женская аудитория
+                  К вашему темпу, границам и опыту
                 </p>
               </CardContent>
             </Card>
@@ -380,55 +380,55 @@ export default function Index() {
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="bg-white rounded-lg px-6 border-none">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                Кто может участвовать?
+                Для кого этот круг?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Женщины от 18 до 65 лет. Можно прийти одной или с подругами (от 5 до 10 человек в группе)
+                Для женщин 18+, которые хотят узнать больше о своём теле, желаниях и интимности. Любой уровень знаний — от нулевого до продвинутого
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2" className="bg-white rounded-lg px-6 border-none">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                Нужно ли что-то покупать обязательно?
+                Это про продажи игрушек?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Нет, покупки абсолютно добровольны. Многие приходят просто ради атмосферы и знаний
+                Нет. Мы говорим о практиках, теле и удовольствии. Инструменты — лишь дополнение, покупка не обязательна
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3" className="bg-white rounded-lg px-6 border-none">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                Будут ли мужчины на мероприятии?
+                Будут мужчины?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Нет, это исключительно женское мероприятие. Даже персонал — женщины
+                Нет. Только женщины — и участницы, и ведущие. Это пространство для нас
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4" className="bg-white rounded-lg px-6 border-none">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                Можно ли прийти одной?
+                Можно прийти без подруг?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Да! Мы формируем группы из индивидуальных заявок. Вы обязательно найдёте единомышленниц
+                Да, большинство приходят одни. Круг — это место, где легко познакомиться и открыться
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5" className="bg-white rounded-lg px-6 border-none">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                Что делать, если я стесняюсь?
+                Я очень стесняюсь таких тем...
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Абсолютно нормально! Большинство участниц приходят с волнением, но атмосфера настолько дружелюбная, что стеснение уходит в первые 10 минут
+                Это нормально, многие приходят с волнением. Ведущие создают атмосферу доверия, никто не заставляет говорить — только когда вы готовы
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-6" className="bg-white rounded-lg px-6 border-none">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                Как часто проходят девичники?
+                Как часто проходят встречи?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Каждые 2 недели. Даты можно уточнить при бронировании
+                Раз в 2-3 недели. Точные даты — при записи
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -440,11 +440,11 @@ export default function Index() {
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Забронируйте ваш девичник
+              Запись в круг
             </h2>
             <div className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-full font-semibold">
               <Icon name="Clock" size={20} />
-              Осталось 3 места на ближайший девичник
+              Осталось 4 места на ближайшую встречу
             </div>
           </div>
 
@@ -489,13 +489,13 @@ export default function Index() {
                 </div>
 
                 <div>
-                  <Label htmlFor="participants">Количество участниц *</Label>
+                  <Label htmlFor="participants">Приду одна / с подругами (укажите количество) *</Label>
                   <Input 
                     id="participants"
                     type="number"
                     min="1"
                     max="10"
-                    placeholder="5"
+                    placeholder="1"
                     required
                     value={formData.participants}
                     onChange={(e) => setFormData({...formData, participants: e.target.value})}
@@ -520,7 +520,7 @@ export default function Index() {
                   size="lg" 
                   className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
                 >
-                  Забронировать девичник
+                  Записаться в круг
                 </Button>
               </form>
             </CardContent>
@@ -535,9 +535,9 @@ export default function Index() {
             <div>
               <h3 className="font-bold text-lg mb-4">Контакты</h3>
               <div className="space-y-2 text-sm opacity-80">
-                <p>г. Владивосток, ул. Светланская, 123</p>
-                <p>+7 (924) 123-45-67</p>
-                <p>info@devichniki-shop.ru</p>
+                <p>г. Владивосток</p>
+                <p>+7 (924) 555-88-33</p>
+                <p>eros@circle.vl</p>
               </div>
             </div>
             
@@ -560,7 +560,7 @@ export default function Index() {
           </div>
           
           <div className="border-t border-background/20 pt-8 text-center text-sm opacity-60">
-            © 2025. Девичники в секс-шопе. Конфиденциальность и безопасность гарантированы.
+            © 2025. ЭРОС — Женский круг. Приватность и уважение гарантированы.
           </div>
         </div>
       </footer>
