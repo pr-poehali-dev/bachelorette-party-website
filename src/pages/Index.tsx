@@ -97,6 +97,18 @@ export default function Index() {
                 Поддержка женского круга, где понимают и не осуждают.
               </p>
             </div>
+
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed italic mb-6">
+                «Хотелось не посиделок и пустых разговоров,
+                а честных знаний про тело, уход и удовольствие.
+                И места, где можно спросить всё — без неловкости.»
+              </p>
+              
+              <p className="text-base text-muted-foreground font-medium">
+                — Ольга, 30 лет
+              </p>
+            </div>
           </div>
         </div>
       </section>
