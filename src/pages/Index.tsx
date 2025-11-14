@@ -17,6 +17,7 @@ export default function Index() {
     name: '',
     phone: '',
     email: '',
+    date: '',
     participants: '',
     message: ''
   })
@@ -592,6 +593,23 @@ export default function Index() {
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     className="mt-2"
                   />
+                </div>
+
+                <div>
+                  <Label htmlFor="date">Выберите дату встречи *</Label>
+                  <select
+                    id="date"
+                    required
+                    value={formData.date}
+                    onChange={(e) => setFormData({...formData, date: e.target.value})}
+                    className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  >
+                    <option value="">Выберите дату</option>
+                    <option value="28.10.2025 18:00">28 октября 2025, 18:00</option>
+                    <option value="05.12.2025 18:00">5 декабря 2025, 18:00</option>
+                    <option value="12.12.2025 18:00">12 декабря 2025, 18:00</option>
+                    <option value="19.12.2025 18:00">19 декабря 2025, 18:00</option>
+                  </select>
                 </div>
 
                 <div>
