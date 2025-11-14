@@ -87,11 +87,11 @@ export default function Index() {
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-white to-secondary/5 rounded-3xl p-8 md:p-10 shadow-xl hover-lift border border-secondary/20 animate-slide-left stagger-1">
-              <div className="bg-gradient-to-br from-primary to-primary/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg">
+            <div className="bg-gradient-to-br from-white to-secondary/5 rounded-3xl p-8 md:p-10 shadow-xl hover-lift hover-rotate border border-secondary/20 animate-slide-left stagger-1 group cursor-pointer transition-all">
+              <div className="bg-gradient-to-br from-primary to-primary/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg heart-beat">
                 <Icon name="Heart" size={32} className="text-primary-foreground" />
               </div>
-              <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center">
+              <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center group-hover:scale-110 transition-transform">
                 Честность и понятность
               </h3>
               
@@ -101,13 +101,18 @@ export default function Index() {
                 Где объясняют простым языком: про телесный отклик, чувственный уход
                 и современные аксессуары для удовольствия.
               </p>
+              <div className="mt-6 text-center">
+                <span className="inline-flex items-center gap-2 text-primary font-semibold group-hover:gap-4 transition-all">
+                  Узнать больше <Icon name="ArrowRight" size={18} className="group-hover:translate-x-2 transition-transform" />
+                </span>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-white to-accent/5 rounded-3xl p-8 md:p-10 shadow-xl hover-lift border border-accent/20 animate-slide-right stagger-2">
-              <div className="bg-gradient-to-br from-accent to-accent/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg">
+            <div className="bg-gradient-to-br from-white to-accent/5 rounded-3xl p-8 md:p-10 shadow-xl hover-lift hover-rotate border border-accent/20 animate-slide-right stagger-2 group cursor-pointer transition-all">
+              <div className="bg-gradient-to-br from-accent to-accent/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg float-animation">
                 <Icon name="Flower2" size={32} className="text-accent-foreground" />
               </div>
-              <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center">
+              <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center group-hover:scale-110 transition-transform">
                 Практика и ощущения
               </h3>
               
@@ -116,6 +121,11 @@ export default function Index() {
                 как безопасно использовать девайсы для интимных практик.
                 Поддержка женского круга, где понимают и не осуждают.
               </p>
+              <div className="mt-6 text-center">
+                <span className="inline-flex items-center gap-2 text-primary font-semibold group-hover:gap-4 transition-all">
+                  Узнать больше <Icon name="ArrowRight" size={18} className="group-hover:translate-x-2 transition-transform" />
+                </span>
+              </div>
             </div>
           </div>
 
@@ -164,79 +174,82 @@ export default function Index() {
       </section>
 
       {/* Solution Section */}
-      <section id="solution" className="py-16 px-4 md:px-8 animate-fade-in">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
+      <section id="solution" className="py-16 px-4 md:px-8 animate-fade-in relative overflow-hidden">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-accent/10 rounded-full blur-3xl float-animation"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl float-animation" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-secondary/20 rounded-full blur-2xl float-animation" style={{animationDelay: '0.5s'}}></div>
+        <div className="max-w-6xl mx-auto relative">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-12 text-primary">
             Что происходит в женском круге ЭРОС
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            <Card className="hover-lift">
+            <Card className="hover-lift hover-scale group cursor-pointer border-2 border-transparent hover:border-primary/30 transition-all">
               <CardContent className="pt-6">
-                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                  <Icon name="Lock" size={28} className="text-primary" />
+                <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:rotate-12 transition-transform">
+                  <Icon name="Lock" size={28} className="text-primary wiggle" />
                 </div>
-                <h3 className="font-bold text-xl mb-3">Безопасное пространство</h3>
+                <h3 className="font-bold text-xl mb-3 group-hover:text-primary transition-colors">Безопасное пространство</h3>
                 <p className="text-muted-foreground">
                   Только женщины, только доверие. Закрытая группа 5-10 человек, где можно говорить обо всём без страха осуждения
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="hover-lift">
+            <Card className="hover-lift hover-scale group cursor-pointer border-2 border-transparent hover:border-accent/30 transition-all">
               <CardContent className="pt-6">
-                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                <div className="bg-gradient-to-br from-accent/20 to-primary/20 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:rotate-12 transition-transform">
                   <Icon name="Gamepad2" size={28} className="text-primary" />
                 </div>
-                <h3 className="font-bold text-xl mb-3">Живой разговор</h3>
+                <h3 className="font-bold text-xl mb-3 group-hover:text-accent transition-colors">Живой разговор</h3>
                 <p className="text-muted-foreground">
                   Через игру и практики узнаёте о своём теле, желаниях и границах. Без лекций — через опыт и диалог
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="hover-lift">
+            <Card className="hover-lift hover-scale group cursor-pointer border-2 border-transparent hover:border-primary/30 transition-all">
               <CardContent className="pt-6">
-                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:rotate-12 transition-transform">
                   <Icon name="UserCheck" size={28} className="text-primary" />
                 </div>
-                <h3 className="font-bold text-xl mb-3">Эксперты без пафоса</h3>
+                <h3 className="font-bold text-xl mb-3 group-hover:text-primary transition-colors">Эксперты без пафоса</h3>
                 <p className="text-muted-foreground">
                   Ведущие круга — специалисты по телесным практикам и интимному здоровью. Говорят просто, по-человечески
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="hover-lift">
+            <Card className="hover-lift hover-scale group cursor-pointer border-2 border-transparent hover:border-accent/30 transition-all">
               <CardContent className="pt-6">
-                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                <div className="bg-gradient-to-br from-accent/20 to-primary/20 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:rotate-12 transition-transform">
                   <Icon name="Wine" size={28} className="text-primary" />
                 </div>
-                <h3 className="font-bold text-xl mb-3">Атмосфера заботы</h3>
+                <h3 className="font-bold text-xl mb-3 group-hover:text-accent transition-colors">Атмосфера заботы</h3>
                 <p className="text-muted-foreground">
                   Чай, лёгкий фуршет, мягкий свет. Пространство, где можно расслабиться и быть собой
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="hover-lift">
+            <Card className="hover-lift hover-scale group cursor-pointer border-2 border-transparent hover:border-primary/30 transition-all">
               <CardContent className="pt-6">
-                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:rotate-12 transition-transform">
                   <Icon name="Gift" size={28} className="text-primary" />
                 </div>
-                <h3 className="font-bold text-xl mb-3">Подарки для себя</h3>
+                <h3 className="font-bold text-xl mb-3 group-hover:text-primary transition-colors">Подарки для себя</h3>
                 <p className="text-muted-foreground">
                   Каждая получает набор для домашнего ухода, гайды по практикам и доступ к закрытому чату поддержки
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="hover-lift">
+            <Card className="hover-lift hover-scale group cursor-pointer border-2 border-transparent hover:border-accent/30 transition-all glow-border">
               <CardContent className="pt-6">
-                <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                <div className="bg-gradient-to-br from-accent/20 to-primary/20 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:rotate-12 transition-transform rotate-slow">
                   <Icon name="Percent" size={28} className="text-primary" />
                 </div>
-                <h3 className="font-bold text-xl mb-3">Скидка 15%</h3>
+                <h3 className="font-bold text-xl mb-3 group-hover:text-accent transition-colors">Скидка 15%</h3>
                 <p className="text-muted-foreground">
                   На все инструменты для практик в день встречи и неделю после
                 </p>
@@ -244,16 +257,22 @@ export default function Index() {
             </Card>
           </div>
 
-          <div className="bg-accent/10 border-2 border-accent rounded-2xl p-8 text-center">
-            <p className="text-2xl font-bold mb-4">Вклад: 1200₽ с человека</p>
-            <p className="text-muted-foreground mb-6">Участие в круге, набор для практик, чай, доступ к чату поддержки и скидка 15%</p>
-            <Button 
-              size="lg" 
-              onClick={scrollToBooking}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8"
-            >
-              Записаться — осталось 4 места
-            </Button>
+          <div className="bg-gradient-to-r from-accent/20 via-primary/10 to-accent/20 border-2 border-accent rounded-2xl p-8 text-center hover-lift pulse-glow relative overflow-hidden">
+            <div className="absolute inset-0 shimmer"></div>
+            <div className="relative">
+              <div className="inline-block mb-3">
+                <span className="text-4xl">🎁</span>
+              </div>
+              <p className="text-3xl font-bold mb-4 text-primary">Вклад: 1200₽ с человека</p>
+              <p className="text-muted-foreground mb-6 text-lg">Участие в круге, набор для практик, чай, доступ к чату поддержки и скидка 15%</p>
+              <Button 
+                size="lg" 
+                onClick={scrollToBooking}
+                className="bg-gradient-to-r from-accent to-primary hover:from-primary hover:to-accent text-white font-bold px-12 py-6 text-xl shadow-2xl hover-lift transition-all duration-300"
+              >
+                ✨ Записаться — осталось 4 места
+              </Button>
+            </div>
           </div>
         </div>
       </section>
