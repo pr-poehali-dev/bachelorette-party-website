@@ -674,9 +674,9 @@ export default function Index() {
             <div>
               <h3 className="font-bold text-lg mb-4">Контакты</h3>
               <div className="space-y-2 text-sm opacity-80">
-                <p>г. Владивосток</p>
-                <p>+7 (924) 555-88-33</p>
-                <p>eros@circle.vl</p>
+                <p>г. Омск, ул. Маршала Жукова, 77</p>
+                <p>+7 (965) 973 40 47</p>
+                <p>info@eros55.ru</p>
               </div>
             </div>
             
