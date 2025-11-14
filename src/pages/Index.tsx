@@ -66,16 +66,16 @@ export default function Index() {
       </section>
 
       {/* What Women Need Section */}
-      <section id="needs" className="py-20 px-4 md:px-8 bg-gradient-to-b from-muted/30 to-white animate-fade-in">
+      <section id="needs" className="py-20 px-4 md:px-8 bg-gradient-to-b from-secondary/10 via-white to-muted/20 animate-fade-in">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center">
+          <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center text-primary">
             В ЧЁМ НА САМОМ ДЕЛЕ НУЖДАЕТСЯ ЖЕНЩИНА
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-lg hover-lift border-2 border-primary/10">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
-                <Icon name="MessageCircle" size={32} className="text-primary" />
+            <div className="bg-gradient-to-br from-white to-secondary/5 rounded-3xl p-8 md:p-10 shadow-xl hover-lift border border-secondary/20">
+              <div className="bg-gradient-to-br from-primary to-primary/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg">
+                <Icon name="Heart" size={32} className="text-primary-foreground" />
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center">
                 Честность и понятность
@@ -89,9 +89,9 @@ export default function Index() {
               </p>
             </div>
 
-            <div className="bg-white rounded-3xl p-8 md:p-10 shadow-lg hover-lift border-2 border-primary/10">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
-                <Icon name="Sparkles" size={32} className="text-primary" />
+            <div className="bg-gradient-to-br from-white to-accent/5 rounded-3xl p-8 md:p-10 shadow-xl hover-lift border border-accent/20">
+              <div className="bg-gradient-to-br from-accent to-accent/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg">
+                <Icon name="Flower2" size={32} className="text-accent-foreground" />
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center">
                 Практика и ощущения
@@ -105,21 +105,23 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="bg-secondary/20 rounded-3xl p-8 md:p-12 shadow-xl border-2 border-secondary/30 mb-12">
+          <div className="bg-gradient-to-br from-secondary/30 to-secondary/10 rounded-3xl p-8 md:p-12 shadow-2xl border-2 border-secondary/40 mb-12 hover-lift">
             <div className="flex items-start gap-4 mb-6">
-              <Icon name="Quote" size={40} className="text-primary/40 flex-shrink-0 mt-2" />
-              <p className="text-lg md:text-xl text-foreground leading-relaxed italic">
+              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                <Icon name="MessageSquareQuote" size={24} className="text-primary" />
+              </div>
+              <p className="text-lg md:text-xl text-foreground leading-relaxed italic font-medium">
                 Хотелось не посиделок и пустых разговоров,
                 а честных знаний про тело, уход и удовольствие.
                 И места, где можно спросить всё — без неловкости.
               </p>
             </div>
             
-            <div className="flex items-center gap-3 ml-14">
-              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">
+            <div className="flex items-center gap-3 ml-16">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center font-bold text-primary-foreground shadow-md">
                 О
               </div>
-              <p className="text-base font-semibold text-foreground">
+              <p className="text-base font-semibold text-primary">
                 Ольга, 30 лет
               </p>
             </div>
@@ -129,12 +131,13 @@ export default function Index() {
             <Button 
               size="lg" 
               onClick={scrollToBooking}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-12 py-7 text-lg shadow-xl hover-lift"
+              className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground font-semibold px-12 py-7 text-lg shadow-2xl hover-lift"
             >
               Присоединиться к женскому кругу ЭРОС
             </Button>
-            <p className="text-sm text-muted-foreground mt-4 font-medium">
-              ⏱ Осталось 4 места на ближайшую встречу
+            <p className="text-sm text-muted-foreground mt-5 font-medium flex items-center justify-center gap-2">
+              <Icon name="Clock" size={16} className="text-accent" />
+              Осталось 4 места на ближайшую встречу
             </p>
           </div>
         </div>
