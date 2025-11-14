@@ -38,7 +38,7 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Девичник, о котором будут говорить месяцами
+                ЭРОС. То, что тебя касается.
               </h1>
               <p className="text-lg md:text-xl mb-8 opacity-90">
                 Приватное пространство, экспертное сопровождение, игровой формат и подарки каждой участнице. Всего 2 часа — и вы по-новому посмотрите на интимную жизнь
