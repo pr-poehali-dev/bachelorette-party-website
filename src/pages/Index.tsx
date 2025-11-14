@@ -74,7 +74,7 @@ export default function Index() {
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-gradient-to-br from-white to-secondary/5 rounded-3xl p-8 md:p-10 shadow-xl hover-lift border border-secondary/20 animate-slide-left stagger-1">
-              <div className="bg-gradient-to-br from-primary to-primary/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg animate-scale-in stagger-2">
+              <div className="bg-gradient-to-br from-primary to-primary/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg">
                 <Icon name="Heart" size={32} className="text-primary-foreground" />
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center">
@@ -90,7 +90,7 @@ export default function Index() {
             </div>
 
             <div className="bg-gradient-to-br from-white to-accent/5 rounded-3xl p-8 md:p-10 shadow-xl hover-lift border border-accent/20 animate-slide-right stagger-2">
-              <div className="bg-gradient-to-br from-accent to-accent/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg animate-scale-in stagger-3">
+              <div className="bg-gradient-to-br from-accent to-accent/80 rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto shadow-lg">
                 <Icon name="Flower2" size={32} className="text-accent-foreground" />
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 text-center">
@@ -105,7 +105,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-secondary/30 to-secondary/10 rounded-3xl p-8 md:p-12 shadow-2xl border-2 border-secondary/40 mb-12 hover-lift animate-scale-in stagger-3">
+          <div className="bg-gradient-to-br from-secondary/30 to-secondary/10 rounded-3xl p-8 md:p-12 shadow-2xl border-2 border-secondary/40 mb-12 hover-lift animate-fade-in stagger-3">
             <div className="flex items-start gap-4 mb-6">
               <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                 <Icon name="MessageSquareQuote" size={24} className="text-primary" />
