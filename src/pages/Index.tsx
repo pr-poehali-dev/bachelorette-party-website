@@ -346,17 +346,15 @@ export default function Index() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "Впервые почувствовала, что можно говорить об этом вслух. Без стыда, без странных взглядов. Ушла с ощущением, что наконец-то знаю, чего хочу"
+                  "Пришла с волнением, а ушла с поддержкой и вдохновением"
                 </p>
                 <div className="flex items-center gap-3">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/5c77938f-76ab-4d06-a204-320d9ed46d8b/files/4ef30699-b07e-49e5-a128-53c9239fe1fc.jpg"
-                    alt="Елена"
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center font-bold text-primary">
+                    М
+                  </div>
                   <div>
-                    <p className="font-semibold">Елена</p>
-                    <p className="text-sm text-muted-foreground">28 лет</p>
+                    <p className="font-semibold">Мария</p>
+                    <p className="text-sm text-muted-foreground">29 лет</p>
                   </div>
                 </div>
               </CardContent>
@@ -370,15 +368,15 @@ export default function Index() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "Думала, уже всё знаю. Но оказалось — столько лет игнорировала своё тело и желания. Круг вернул мне контакт с собой"
+                  "Получила ответы, которые не могла задать годами"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center font-bold text-primary">
-                    О
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center font-bold text-primary">
+                    С
                   </div>
                   <div>
-                    <p className="font-semibold">Ольга</p>
-                    <p className="text-sm text-muted-foreground">38 лет</p>
+                    <p className="font-semibold">Светлана</p>
+                    <p className="text-sm text-muted-foreground">42 года</p>
                   </div>
                 </div>
               </CardContent>
@@ -392,15 +390,15 @@ export default function Index() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "После круга поняла: я имею право на удовольствие. Это звучит просто, но для меня стало открытием"
+                  "С подругой вышли обновлённые и довольные"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center font-bold text-primary">
-                    Д
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center font-bold text-primary">
+                    А
                   </div>
                   <div>
-                    <p className="font-semibold">Дарья</p>
-                    <p className="text-sm text-muted-foreground">32 года</p>
+                    <p className="font-semibold">Анастасия</p>
+                    <p className="text-sm text-muted-foreground">31 год</p>
                   </div>
                 </div>
               </CardContent>
