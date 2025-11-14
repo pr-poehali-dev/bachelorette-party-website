@@ -525,6 +525,33 @@ export default function Index() {
                 Нет, но только в день встречи действует скидка 10%
               </AccordionContent>
             </AccordionItem>
+
+            <AccordionItem value="item-6" className="bg-white rounded-lg px-6 border-none">
+              <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                Это откровенно?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Формат корректный и профессиональный
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-7" className="bg-white rounded-lg px-6 border-none">
+              <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                Можно подарить участие?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Да, сертификат или бронирование
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-8" className="bg-white rounded-lg px-6 border-none">
+              <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                Что если стесняюсь?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Можно слушать и постепенно включаться
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </div>
       </section>
