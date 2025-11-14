@@ -33,32 +33,40 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-20 px-4 md:px-8 lg:py-32 animate-fade-in">
-        <div className="max-w-6xl mx-auto">
+      <section className="bg-gradient-to-br from-primary via-accent to-primary text-primary-foreground py-20 px-4 md:px-8 lg:py-32 animate-fade-in relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMtNi42MjcgMC0xMiA1LjM3My0xMiAxMnM1LjM3MyAxMiAxMiAxMiAxMi01LjM3MyAxMi0xMi01LjM3My0xMi0xMi0xMnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4xIiBzdHJva2Utd2lkdGg9IjIiLz48L2c+PC9zdmc+')] opacity-10"></div>
+        <div className="max-w-6xl mx-auto relative">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              <div className="inline-block mb-4 px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm border border-white/30 animate-bounce-subtle">
+                <p className="text-sm font-semibold">✨ Открытый и безопасный круг</p>
+              </div>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-slide-left">
                 ЭРОС. То, что тебя касается.
               </h1>
-              <p className="text-lg md:text-xl mb-8 opacity-90">
+              <p className="text-lg md:text-xl mb-8 opacity-95 animate-slide-left stagger-1">
                 Пространство женского круга, где честно и простым языком рассказывают
 про чувственный уход, мягкие практики и современные инструменты для интимной близости.
 Без стеснения, без табу — только то, что действительно работает
 и касается именно тебя.
               </p>
-              <Button 
-                size="lg" 
-                onClick={scrollToBooking}
-                className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 text-lg"
-              >
-                Присоединиться к кругу
-              </Button>
+              <div className="relative inline-block animate-slide-left stagger-2">
+                <div className="absolute inset-0 bg-white blur-xl opacity-50"></div>
+                <Button 
+                  size="lg" 
+                  onClick={scrollToBooking}
+                  className="relative bg-white hover:bg-white/90 text-primary font-bold px-10 py-7 text-xl shadow-2xl hover-lift"
+                >
+                  💕 Записаться сейчас
+                </Button>
+              </div>
             </div>
-            <div className="relative">
+            <div className="relative animate-slide-right stagger-2">
+              <div className="absolute -inset-4 bg-gradient-to-r from-white/30 to-accent/30 blur-3xl rounded-full"></div>
               <img 
                 src="https://cdn.poehali.dev/projects/5c77938f-76ab-4d06-a204-320d9ed46d8b/files/64f8ca89-ea73-429b-8539-4965bb27a223.jpg"
                 alt="Девичник"
-                className="rounded-2xl shadow-2xl hover-lift"
+                className="relative rounded-2xl shadow-2xl hover-lift border-4 border-white/30"
               />
             </div>
           </div>
@@ -66,8 +74,14 @@ export default function Index() {
       </section>
 
       {/* What Women Need Section */}
-      <section id="needs" className="py-20 px-4 md:px-8 bg-gradient-to-b from-secondary/10 via-white to-muted/20">
-        <div className="max-w-5xl mx-auto">
+      <section id="needs" className="py-20 px-4 md:px-8 bg-gradient-to-b from-secondary/20 via-accent/5 to-secondary/20 relative">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(244,63,94,0.1),transparent_50%),radial-gradient(circle_at_70%_80%,rgba(255,105,180,0.1),transparent_50%)]"></div>
+        <div className="max-w-5xl mx-auto relative">
+          <div className="text-center mb-6">
+            <span className="inline-block px-6 py-2 bg-gradient-to-r from-accent to-primary text-white rounded-full text-sm font-bold shadow-lg animate-bounce-subtle">
+              ⭐ Главное о женской природе
+            </span>
+          </div>
           <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center text-primary animate-fade-in">
             В ЧЁМ НА САМОМ ДЕЛЕ НУЖДАЕТСЯ ЖЕНЩИНА
           </h2>
@@ -128,17 +142,23 @@ export default function Index() {
           </div>
 
           <div className="text-center animate-slide-up stagger-3">
-            <Button 
-              size="lg" 
-              onClick={scrollToBooking}
-              className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground font-semibold px-12 py-7 text-lg shadow-2xl hover-lift"
-            >
-              Присоединиться к женскому кругу ЭРОС
-            </Button>
-            <p className="text-sm text-muted-foreground mt-5 font-medium flex items-center justify-center gap-2">
-              <Icon name="Clock" size={16} className="text-accent" />
-              Осталось 4 места на ближайшую встречу
-            </p>
+            <div className="inline-block relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary blur-2xl opacity-40 animate-pulse"></div>
+              <Button 
+                size="lg" 
+                onClick={scrollToBooking}
+                className="relative bg-gradient-to-r from-accent via-primary to-accent bg-[length:200%_100%] hover:bg-right text-primary-foreground font-bold px-14 py-8 text-xl shadow-2xl hover-lift pulse-glow transition-all duration-500"
+              >
+                💖 Присоединиться к кругу ЭРОС
+              </Button>
+            </div>
+            <div className="mt-6 inline-flex items-center gap-2 bg-gradient-to-r from-accent/20 to-primary/20 px-6 py-3 rounded-full border-2 border-accent/30 bounce-subtle">
+              <Icon name="Sparkles" size={18} className="text-accent" />
+              <p className="text-sm font-bold text-primary">
+                Только 4 места! Успей записаться
+              </p>
+              <Icon name="Sparkles" size={18} className="text-accent" />
+            </div>
           </div>
         </div>
       </section>
