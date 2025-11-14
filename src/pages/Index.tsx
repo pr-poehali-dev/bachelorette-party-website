@@ -13,6 +13,13 @@ import {
 } from "@/components/ui/accordion"
 
 export default function Index() {
+  const meetingDates = [
+    { date: '28.10.2025 18:00', display: '28 октября 2025, 18:00', spots: 4 },
+    { date: '05.12.2025 18:00', display: '5 декабря 2025, 18:00', spots: 7 },
+    { date: '12.12.2025 18:00', display: '12 декабря 2025, 18:00', spots: 8 },
+    { date: '19.12.2025 18:00', display: '19 декабря 2025, 18:00', spots: 10 }
+  ]
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -265,50 +272,41 @@ export default function Index() {
               <h3 className="text-2xl md:text-3xl font-bold text-primary">Даты встреч</h3>
             </div>
             <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
-              <div className="bg-white/50 backdrop-blur-sm rounded-xl p-5 hover-lift hover-scale border-2 border-transparent hover:border-primary/30 transition-all group">
-                <div className="flex items-center gap-4">
-                  <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-full w-14 h-14 flex items-center justify-center group-hover:rotate-12 transition-transform">
-                    <span className="text-2xl">📅</span>
+              {meetingDates.map((meeting, index) => (
+                <div key={meeting.date} className={`bg-white/50 backdrop-blur-sm rounded-xl p-5 hover-lift hover-scale border-2 border-transparent ${index % 2 === 0 ? 'hover:border-primary/30' : 'hover:border-accent/30'} transition-all group relative overflow-hidden`}>
+                  {meeting.spots <= 4 && (
+                    <div className="absolute top-2 right-2">
+                      <span className="bg-accent text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse">
+                        🔥 Мало мест!
+                      </span>
+                    </div>
+                  )}
+                  <div className="flex items-center gap-4 mb-3">
+                    <div className={`bg-gradient-to-br ${index % 2 === 0 ? 'from-primary/20 to-accent/20' : 'from-accent/20 to-primary/20'} rounded-full w-14 h-14 flex items-center justify-center group-hover:rotate-12 transition-transform`}>
+                      <span className="text-2xl">📅</span>
+                    </div>
+                    <div className="text-left flex-1">
+                      <p className="text-xl font-bold text-primary">{meeting.display.split(' 2025')[0]}</p>
+                      <p className="text-muted-foreground">18:00</p>
+                    </div>
                   </div>
-                  <div className="text-left">
-                    <p className="text-xl font-bold text-primary">28 октября</p>
-                    <p className="text-muted-foreground">18:00</p>
+                  <div className="flex items-center gap-2 mt-3">
+                    <Icon name="Users" size={16} className="text-primary" />
+                    <span className="text-sm font-semibold text-primary">
+                      Осталось {meeting.spots} {meeting.spots === 1 ? 'место' : meeting.spots < 5 ? 'места' : 'мест'}
+                    </span>
                   </div>
-                </div>
-              </div>
-              <div className="bg-white/50 backdrop-blur-sm rounded-xl p-5 hover-lift hover-scale border-2 border-transparent hover:border-accent/30 transition-all group">
-                <div className="flex items-center gap-4">
-                  <div className="bg-gradient-to-br from-accent/20 to-primary/20 rounded-full w-14 h-14 flex items-center justify-center group-hover:rotate-12 transition-transform">
-                    <span className="text-2xl">📅</span>
-                  </div>
-                  <div className="text-left">
-                    <p className="text-xl font-bold text-primary">5 декабря</p>
-                    <p className="text-muted-foreground">18:00</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white/50 backdrop-blur-sm rounded-xl p-5 hover-lift hover-scale border-2 border-transparent hover:border-primary/30 transition-all group">
-                <div className="flex items-center gap-4">
-                  <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-full w-14 h-14 flex items-center justify-center group-hover:rotate-12 transition-transform">
-                    <span className="text-2xl">📅</span>
-                  </div>
-                  <div className="text-left">
-                    <p className="text-xl font-bold text-primary">12 декабря</p>
-                    <p className="text-muted-foreground">18:00</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white/50 backdrop-blur-sm rounded-xl p-5 hover-lift hover-scale border-2 border-transparent hover:border-accent/30 transition-all group">
-                <div className="flex items-center gap-4">
-                  <div className="bg-gradient-to-br from-accent/20 to-primary/20 rounded-full w-14 h-14 flex items-center justify-center group-hover:rotate-12 transition-transform">
-                    <span className="text-2xl">📅</span>
-                  </div>
-                  <div className="text-left">
-                    <p className="text-xl font-bold text-primary">19 декабря</p>
-                    <p className="text-muted-foreground">18:00</p>
+                  <div className="flex gap-1 mt-2">
+                    {[...Array(10)].map((_, i) => (
+                      <div 
+                        key={i} 
+                        className={`w-3 h-3 rounded-full ${i < 10 - meeting.spots ? 'bg-primary' : 'bg-gray-200'}`}
+                        title={i < 10 - meeting.spots ? 'Занято' : 'Свободно'}
+                      ></div>
+                    ))}
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -487,55 +485,46 @@ export default function Index() {
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="bg-white rounded-lg px-6 border-none">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                Для кого этот круг?
+                Кто может участвовать?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Для женщин 18+, которые хотят узнать больше о своём теле, желаниях и интимности. Любой уровень знаний — от нулевого до продвинутого
+                Только женщины 18+
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2" className="bg-white rounded-lg px-6 border-none">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                Это про продажи игрушек?
+                Можно прийти одной?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Нет. Мы говорим о практиках, теле и удовольствии. Инструменты — лишь дополнение, покупка не обязательна
+                Да, большинство приходят без компании
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3" className="bg-white rounded-lg px-6 border-none">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                Будут мужчины?
+                Есть ли скидки?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Нет. Только женщины — и участницы, и ведущие. Это пространство для нас
+                Вдвоём 10%, втроём 20%
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4" className="bg-white rounded-lg px-6 border-none">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                Можно прийти без подруг?
+                Будут ли мужчины?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Да, большинство приходят одни. Круг — это место, где легко познакомиться и открыться
+                Нет, только женщины и эксперт
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-5" className="bg-white rounded-lg px-6 border-none">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                Я очень стесняюсь таких тем...
+                Нужно ли что-то покупать?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
-                Это нормально, многие приходят с волнением. Ведущие создают атмосферу доверия, никто не заставляет говорить — только когда вы готовы
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-6" className="bg-white rounded-lg px-6 border-none">
-              <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                Как часто проходят встречи?
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
-                Раз в 2-3 недели. Точные даты — при записи
+                Нет, но только в день встречи действует скидка 10%
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -605,10 +594,11 @@ export default function Index() {
                     className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   >
                     <option value="">Выберите дату</option>
-                    <option value="28.10.2025 18:00">28 октября 2025, 18:00</option>
-                    <option value="05.12.2025 18:00">5 декабря 2025, 18:00</option>
-                    <option value="12.12.2025 18:00">12 декабря 2025, 18:00</option>
-                    <option value="19.12.2025 18:00">19 декабря 2025, 18:00</option>
+                    {meetingDates.map((meeting) => (
+                      <option key={meeting.date} value={meeting.date}>
+                        {meeting.display} - осталось {meeting.spots} {meeting.spots === 1 ? 'место' : meeting.spots < 5 ? 'места' : 'мест'}
+                      </option>
+                    ))}
                   </select>
                 </div>
 
