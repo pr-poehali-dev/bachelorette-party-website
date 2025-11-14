@@ -72,17 +72,31 @@ export default function Index() {
             В ЧЁМ НА САМОМ ДЕЛЕ НУЖДАЕТСЯ ЖЕНЩИНА
           </h2>
           
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg">
-            <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-              Честность и понятность
-            </h3>
-            
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Женщине важно пространство, где можно говорить открыто —
-              без неловкости, давления и сложных терминов.
-              Где объясняют простым языком: про телесный отклик, чувственный уход
-              и современные аксессуары для удовольствия.
-            </p>
+          <div className="space-y-6">
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                Честность и понятность
+              </h3>
+              
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                Женщине важно пространство, где можно говорить открыто —
+                без неловкости, давления и сложных терминов.
+                Где объясняют простым языком: про телесный отклик, чувственный уход
+                и современные аксессуары для удовольствия.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 md:p-12 shadow-lg">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                Практика и ощущения
+              </h3>
+              
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                Как повысить чувствительность, как применять уходовые продукты,
+                как безопасно использовать девайсы для интимных практик.
+                Поддержка женского круга, где понимают и не осуждают.
+              </p>
+            </div>
           </div>
         </div>
       </section>
